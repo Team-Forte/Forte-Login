@@ -1,4 +1,4 @@
-# Forte-Login Design Branch
+# Forte-Login Front-End Branch
 
 This is the Front-end branch for front-end commits on the Forte Login page.
 Make a branch with YOUR NAME from the Front-End branch
