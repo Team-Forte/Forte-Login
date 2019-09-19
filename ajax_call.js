@@ -14,7 +14,7 @@
 																$.jGrowl("Loading Please Wait......", { sticky: true });
 																$.jGrowl("You have successfully Registered", { header: 'Access Granted' });
 															var delay = 3000;
-																setTimeout(function(){ window.location = 'index.php'  }, delay);   
+																setTimeout(function(){ window.location = 'index.html'  }, delay);   
 															}else
 															{
 															$.jGrowl("User Already exists", { header: 'Login Failed' });
@@ -42,7 +42,7 @@
 																setTimeout(function(){ window.location = 'dashboard.php'  }, delay);    
 															}else
 															{
-															$.jGrowl("Please Check your username and Password", { header: 'Login Failed. Click Sign Up to Register' });
+															$.jGrowl("Please Check your username and Password. Click Sign Up to Register", { header: 'Login Failed.' });
 															}
 															}
 														});
