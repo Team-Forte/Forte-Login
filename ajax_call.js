@@ -42,7 +42,7 @@
 																setTimeout(function(){ window.location = 'dashboard.php'  }, delay);    
 															}else
 															{
-															$.jGrowl("Please Check your username and Password", { header: 'Login Failed' });
+															$.jGrowl("Please Check your username and Password", { header: 'Login Failed. Click Sign Up to Register' });
 															}
 															}
 														});

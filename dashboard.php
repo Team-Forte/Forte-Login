@@ -18,7 +18,7 @@ include ('header.php');
 	<div class="overlay-container">
 		<div class="overlay">
 			<div class="overlay-panel overlay-right">
-				<h2>Hello, <?echo $_SESSION['name']?>!</h2>
+				<h2>Hello, <?echo $_SESSION['name']?></h2>
 				<p>Lets get you<br> started with us</p>
 				<button class="ghost" id="signUp">Continue</button>
 			</div>

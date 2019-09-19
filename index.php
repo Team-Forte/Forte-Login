@@ -38,12 +38,12 @@
 		<div class="overlay">
 			<div class="overlay-panel overlay-left">
 				<h2>Welcome Back!</h2>
-				<p>To keep connected with us please<br>login with your personal info</p>
+				<p>To stay connected with us please<br>login with your personal info</p>
 				<button class="ghost" id="signIn">Sign In</button>
 			</div>
 			<div class="overlay-panel overlay-right">
 				<h2>Hello, Friend!</h2>
-				<p>Enter your personal details<br>and start journey with us</p>
+				<p>Enter your personal details<br>and start your journey with us</p>
 				<button class="ghost" id="signUp">Sign Up</button>
 			</div>
 		</div>

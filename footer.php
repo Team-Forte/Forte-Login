@@ -1,6 +1,6 @@
 <footer>
 	<p>
-		<a target="_blank" href="#">Forte Tech Institute</a>
+		<a target="_blank" href="#"><strong>Forte Tech Institute © 2019</strong></a>
 	
 	</p>
 </footer>
