@@ -1,13 +1,14 @@
 <?php
 		include('db_con.php');
 		
-		$username = $_POST['email'];
-		$password = $_POST['password'];
-		/* student */
-		$query = "SELECT * FROM users WHERE email='$username' AND password='$password'";
+		$email =  mysqli_real_escape_string($conn, $_POST['email']);
+		$password1 = mysqli_real_escape_string($conn,$_POST['password']);
+		$password = md5($password1);
+
+		$query = "SELECT * FROM users WHERE email='$email' AND password='$password'";
 		$result = mysqli_query($conn, $query)or die(mysqli_error($conn));
 		$row = mysqli_fetch_array($result);
-		$num_row = mysql_num_rows($result);
+		$num_row = mysqli_num_rows($result);
 
 		$pass=$row['password'];
 		$email =$row['email'];
@@ -16,13 +17,15 @@
 		session_start();
 		$_SESSION['id']=$row['id'];
 		$_SESSION['success'] = "You are now logged in";
+		$_SESSION['name'] = $row['name'];
 
-		
-		
+
 		if($email && $pass){
-			echo 'Success';	
+			echo 'success';	
 		}	
 		else{ 
 				echo 'false';
-		}}	
+		}
+
+	}	
 		?>

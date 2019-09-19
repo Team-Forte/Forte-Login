@@ -8,7 +8,8 @@ window.location = "index.php";
 <?php
 }
 $session_id=$_SESSION['id'];
-$query= mysql_query("select * from users where id = '$session_id'")or die(mysql_error());
-	$row = mysql_fetch_array($query);
-	$user_username = $row['email'];
+include ('db_con.php');
+$query= mysqli_query($conn, "select * from users where id = '$session_id'")or die(mysqli_error($conn));
+	$row = mysqli_fetch_array($query);
+	$user_username = $row['name'];
 ?>

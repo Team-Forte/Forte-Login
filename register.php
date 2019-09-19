@@ -1,9 +1,10 @@
 <?php
 		include('db_con.php');
 		
-		$name = $_POST['name'];
-		$email = $_POST['email'];
-		$password1 = $_POST['password'];
+		$name =mysqli_real_escape_string($conn, $_POST['name']);
+		$email = mysqli_real_escape_string($conn, $_POST['email']);
+
+		$password1 = mysqli_real_escape_string($conn,$_POST['password']);
 
 		// first check the database to make sure 
   // a user does not already exist with the same email

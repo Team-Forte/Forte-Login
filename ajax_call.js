@@ -35,7 +35,7 @@
 															url: "login.php",
 															data: formData,
 															success: function(html){
-															 if (html == 'true_admin'){
+															 if (html == 'success'){
 																$.jGrowl("Loading Please Wait......", { sticky: true });
 																$.jGrowl("Login Successful", { header: 'Access Granted' });
 															var delay = 1000;
