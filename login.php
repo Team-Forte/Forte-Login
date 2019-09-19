@@ -1,31 +1,35 @@
 <?php
-		include('db_con.php');
-		
-		$email =  mysqli_real_escape_string($conn, $_POST['email']);
-		$password1 = mysqli_real_escape_string($conn,$_POST['password']);
-		$password = md5($password1);
+require_once "functions.php";
+$errorlogin = '';
+if(isset($_POST['LOGIN'])){
+  
+$emaiL=trim($_POST["email"]);
+$password=trim($_POST["password"]);
 
-		$query = "SELECT * FROM users WHERE email='$email' AND password='$password'";
-		$result = mysqli_query($conn, $query)or die(mysqli_error($conn));
-		$row = mysqli_fetch_array($result);
-		$num_row = mysqli_num_rows($result);
+$conn=connecTDatabase();          //connect to database
+$st = $conn->prepare("SELECT email, password FROM users
+	WHERE email = ? "); //query email from users table
+	$st->execute(array($emaiL));
+$emailcount1=$st->rowCount();
+foreach ($st->fetchAll() as $row) {
+          $hashed_password=  "{$row['password']}";
+          
+      }
 
-		$pass=$row['password'];
-		$email =$row['email'];
-		
-		if( $num_row > 0 ) { 
-		session_start();
-		$_SESSION['id']=$row['id'];
-		$_SESSION['success'] = "You are now logged in";
-		$_SESSION['name'] = $row['name'];
+if($emailcount1 >= 1){
+  
+   if(($password == $hashed_password)){
+    
+    header('Location: welcome.php'); 
+    
+   }else{
+     $errorlogin = 'Wrong Password';
+   }
+  
+}else{
+  $errorlogin = 'User does not Exist';
+}
 
+}
 
-		if($email && $pass){
-			echo 'success';	
-		}	
-		else{ 
-				echo 'false';
-		}
-
-	}	
-		?>
+?>
