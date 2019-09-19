@@ -9,7 +9,7 @@
 			<h1>Create Account</h1>
 			<div class="social-container">
 				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-github"></i></a>
 				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 			</div>
 			<span>or use your email for registration</span>
@@ -21,17 +21,17 @@
 	</div>
 	<div class="form-container sign-in-container">
 		<form id="login" method="POST">
-			<h1>Sign in to Forte</h1>
+			<h1>Sign in to Forte Tech</h1>
 			<div class="social-container">
 				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-github"></i></a>
 				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 			</div>
 			<span>or use your account</span>
 			<input type="email" name="email" placeholder="Email" required/>
 			<input type="password" name="password" placeholder="Password" required />
-			<div class="boxed"><a href="#">Forgot your password?</a></div>
 			<button>Sign In</button>
+			<div class="boxed"><a href="#">Forgot your password?</a></div>
 		</form>
 	</div>
 	<div class="overlay-container">

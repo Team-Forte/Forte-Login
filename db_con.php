@@ -6,9 +6,9 @@
 // }
 
 $servername = "localhost";
-$username = "Put yours";
-$password = "secret";
-$dbname = "db";
+$username = "id10934171_user";
+$password = "12345";
+$dbname = "id10934171_dbase";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
