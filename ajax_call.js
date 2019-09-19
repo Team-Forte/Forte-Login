@@ -3,7 +3,7 @@
 														console.log('yesss');
 														e.preventDefault();
 														var formData = jQuery(this).serialize();
-																												console.log(formData);
+															console.log(formData);
 														$.ajax({
 															type: "POST",
 															url: "register.php",
@@ -12,7 +12,7 @@
 														.done(function(html){
 															 if (html == 'success'){
 																$.jGrowl("Loading Please Wait......", { sticky: true });
-																$.jGrowl("You have successfully Register", { header: 'Access Granted' });
+																$.jGrowl("You have successfully Registered", { header: 'Access Granted' });
 															var delay = 3000;
 																setTimeout(function(){ window.location = 'index.php'  }, delay);   
 															}else
