@@ -36,7 +36,7 @@ mysqli_close($conn);
 --
 
 CREATE TABLE `users` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `name` varchar(50) NOT NULL,
   `email` varchar(100) NULL,
   `password` varchar(50) NULL,
