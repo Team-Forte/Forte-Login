@@ -1,4 +1,4 @@
-
+<?php include('db_con.php'); ?>
 <?php include('header.php'); ?>
 
 <body>
