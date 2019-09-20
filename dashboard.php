@@ -2,8 +2,8 @@
 include('session.php');
 include('header.php');
  echo 'Welcome '. $_SESSION['name']. ' You are successfully Logged In'; 
-?>,
- <a href="logout.php">logout</a>
+?>
+ <a href="logout.php">Logout</a>
 
  <body>
 <div class="container" id="container">
@@ -20,7 +20,7 @@ include('header.php');
 			<div>
 			<div class="overlay-panel overlay-right">
 				<h2>Hello! <?echo $_SESSION['name']?></h2>
-				<p>Lets get you<br> started with us</p>
+				<p>Continue your learning...</p>
 				<button class="ghost" id="signUp"><a href="index.html">Continue</a></button>
 			</div>
 			<!--<div class="overlay-panel overlay-left">
