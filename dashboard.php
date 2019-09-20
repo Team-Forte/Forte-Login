@@ -1,7 +1,7 @@
 <?php
 include('session.php');
-include ('header.php');
- echo 'Welcome '. $_SESSION['name']. ' You are successfully Logged In '; 
+include('header.php');
+ echo 'Welcome '. $_SESSION['name']. ' You are successfully Logged In'; 
 ?>,
  <a href="logout.php">logout</a>
 
