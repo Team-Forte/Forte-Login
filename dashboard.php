@@ -1,9 +1,10 @@
 <?php
 include('session.php');
 include('header.php');
- echo 'Welcome '. $_SESSION['name']. ' You are successfully Logged In'; 
+ echo 'Welcome '. $_SESSION['name'].' You are successfully Logged In'; 
 ?>
  <a href="logout.php">Logout</a>
+ 
 
  <body>
 <div class="container" id="container">
