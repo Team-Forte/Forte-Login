@@ -1,0 +1,165 @@
+// ==================
+// ======FONTS=======
+// ==================
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url("../fonts/montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url("../fonts/montserrat/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-ExtraBold;
+  src: url("../fonts/montserrat/Montserrat-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url("../fonts/montserrat/Montserrat-Medium.ttf");
+}
+
+.profile {
+  max-width: 40%;
+  text-align: center;
+}
+
+.wow:hover {
+  border-bottom: 2px solid #039aff;
+}
+
+.carousel-context h2 {
+  position: absolute;
+  width: 35%;
+  bottom: 80%;
+  left: 3%;
+  color: #fff;
+  font-size: 60px;
+  font-family: Montserrat-Medium;
+  font-weight: 800;
+}
+
+.text h4 {
+  position: absolute;
+  font-size: 35px;
+  font-family: Montserrat-Medium;
+  font-weight: 800;
+  //   width: 100%;
+  top: 230 !important;
+  left: 190 !important;
+  color: #039aff;
+}
+
+.text p {
+  position: absolute;
+  font-size: 19px;
+  font-family: Montserrat-Medium;
+  font-weight: 800;
+  width: 24%;
+  top: 272 !important;
+  left: 190 !important;
+  color: #ffffff;
+}
+
+.img1 {
+  max-width: 50%;
+  position: relative;
+  top: -50;
+  display: block;
+  text-align: center;
+  margin: auto;
+  border-radius: 100%;
+  background: #039aff;
+  padding: 30px;
+}
+
+.img2 {
+  position: relative;
+  top: -50;
+  text-align: center;
+  margin: auto;
+  border-radius: 100%;
+  background: #ffffff;
+  padding: 30px;
+}
+
+#white_color {
+  background: #ffffff;
+  text-align: center;
+}
+
+#blue_color {
+  background: #039aff;
+  text-align: center;
+}
+
+.text-text {
+  text-align: center;
+  padding: 10px 0px 70px 0px;
+
+  h2 {
+    font-size: 23px;
+    color: Black !important;
+  }
+
+  p {
+    font-size: 17px;
+    color: Black !important;
+    width: 60%;
+    margin: auto;
+  }
+}
+
+.footer-nav {
+  background: #ff9193;
+
+  .span {
+    padding: 0px !important;
+  }
+}
+
+// ========================= //
+// ========Responsive======= //
+// ========================= //
+
+@media only screen and (max-width: 375px) {
+  #demo {
+    display: none !important;
+  }
+
+  #row-block {
+    margin-top: 90px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+
+  .carousel-context h2 {
+  width: 35%;
+  bottom: 70%;
+  left: 4%;
+  color: #fff;
+  font-size: 40px;
+}
+
+  .text h4 {
+    font-size: 30px;
+    font-weight: 800;
+    top: 230 !important;
+    left: 70 !important;
+  }
+
+  .text p {
+    font-size: 15px;
+    width: 70%;
+    top: 280 !important;
+    left: 70 !important;
+  }
+
+  #carousel-inner img{
+     width:"50%"
+  }
+}

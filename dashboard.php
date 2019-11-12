@@ -1,9 +1,10 @@
 <?php
 include('session.php');
-include ('header.php');
- echo 'Welcome '. $_SESSION['name']. ' You are successfully Logged In '; 
-?>,
- <a href="logout.php">logout</a>
+include('header.php');
+ echo 'Welcome '. $_SESSION['name'].' You are successfully Logged In'; 
+?>
+ <a href="logout.php">Logout</a>
+ 
 
  <body>
 <div class="container" id="container">
@@ -17,16 +18,17 @@ include ('header.php');
 	</div>
 	<div class="overlay-container">
 		<div class="overlay">
+			<div>
 			<div class="overlay-panel overlay-right">
-				<h2>Hello, <?echo $_SESSION['name']?>!</h2>
-				<p>Lets get you<br> started with us</p>
-				<button class="ghost" id="signUp">Continue</button>
+				<h2>Hello! <?echo $_SESSION['name']?></h2>
+				<p>Continue your learning...</p>
+				<button class="ghost" id="signUp"><a href="index.html">Continue</a></button>
 			</div>
-			<div class="overlay-panel overlay-left">
+			<!--<div class="overlay-panel overlay-left">
 				<h2>GREAT!!!</h2>
 				<p>Almost Done</p>
 				<button class="ghost" id="signIn">Done</button>
-			</div>
+			</div>-->
 		</div>
 	</div>
 </div>
